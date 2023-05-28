@@ -366,7 +366,7 @@ app.post("/forgot-password", async (req, res) => {
     const token = jwt.sign({ email: oldUser.email, id: oldUser._id }, secret, {
       expiresIn: "5m",
     });
-    const link = `http://localhost:5000/reset-password/${oldUser._id}/${token}`;
+    const link = `https://textup-backend.onrender.com/reset-password/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -480,7 +480,7 @@ app.post("/change-email", async (req, res) => {
     const token = jwt.sign({ email: oldUser.email, id: oldUser._id }, newmail, {
       expiresIn: "5m",
     });
-    const link = `http://localhost:5000/change-email/${oldUser._id}/${token}`;
+    const link = `https://textup-backend.onrender.com/change-email/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
