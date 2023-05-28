@@ -246,6 +246,7 @@ app.post("/userNotesData", async (req, res) => {
 
 app.listen(5000, () => {
   console.log("Server Started");
+  console.log(' Started on port ${port}');
 });
 
 // Get All User Notes Data
