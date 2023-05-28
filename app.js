@@ -247,7 +247,7 @@ app.post("/userNotesData", async (req, res) => {
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log("Server Started");
-  console.log(' Started on port ${port}');
+  console.log(`App is running on port ${port}`);
 });
 
 // Get All User Notes Data
