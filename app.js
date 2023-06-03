@@ -97,13 +97,13 @@ app.post("/storeOTP", async (req, res) => {
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "Your email address through which you created account on nodemailer",
-        pass: "Your email address password",
+        user: "beatsbreakers@gmail.com",
+        pass: "qvyjxxddgbtkmssk",
       },
     });
 
     var mailOptions = {
-      from: "Your email address through which you created account on nodemailer",
+      from: "beatsbreakers@gmail.com",
       to: email,
       subject: "TextUp Email OTP Verification - Action Required",
       text: `Dear User,
@@ -122,7 +122,7 @@ Step 4: Click on the Verify button to complete the process.
   
 Note: The OTP code is valid for a limited time and can only be used once. If you do not complete the verification process within the specified time, you may need to request a new OTP code.
   
-Ensuring the security and privacy of our users' data is our top priority, and this additional layer of verification helps us maintain a safe environment for all TextUp users. If you have not initiated this verification process or suspect any unauthorized activity, please contact our support team immediately at Your email address through which you created account on nodemailer. We will assist you in securing your account.
+Ensuring the security and privacy of our users' data is our top priority, and this additional layer of verification helps us maintain a safe environment for all TextUp users. If you have not initiated this verification process or suspect any unauthorized activity, please contact our support team immediately at beatsbreakers@gmail.com. We will assist you in securing your account.
   
 Thank you for your cooperation in this matter. We apologize for any inconvenience caused during the verification process, but we believe these measures are essential to protect your account.
   
@@ -369,13 +369,13 @@ app.post("/forgot-password", async (req, res) => {
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "Your email address through which you created account on nodemailer",
-        pass: "Your email address password",
+        user: "beatsbreakers@gmail.com",
+        pass: "qvyjxxddgbtkmssk",
       },
     });
 
     var mailOptions = {
-      from: "Your email address through which you created account on nodemailer",
+      from: "beatsbreakers@gmail.com",
       to: email,
       subject: "TextUp Password Reset - Action Required",
       text: `Dear User,
@@ -396,7 +396,7 @@ Step 4: Click on the "Reset Password" button to complete the process.
 
 Please note that for security reasons, the password reset link will expire after a certain period. If you are unable to reset your password within that timeframe, you may need to request another password reset email.
 
-If you did not initiate this password reset request or suspect any unauthorized activity, please contact our support team immediately at Your email address through which you created account on nodemailer. We will investigate the matter promptly and assist you accordingly.
+If you did not initiate this password reset request or suspect any unauthorized activity, please contact our support team immediately at beatsbreakers@gmail.com. We will investigate the matter promptly and assist you accordingly.
 
 Ensuring the security and privacy of our users data is our top priority, and we appreciate your cooperation during this process. We apologize for any inconvenience caused.
 
@@ -483,13 +483,13 @@ app.post("/change-email", async (req, res) => {
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "Your email address through which you created account on nodemailer",
-        pass: "Your email address password",
+        user: "beatsbreakers@gmail.com",
+        pass: "qvyjxxddgbtkmssk",
       },
     });
 
     var mailOptions = {
-      from: "Your email address through which you created account on nodemailer",
+      from: "beatsbreakers@gmail.com",
       to: email,
       subject: "TextUp Email Change Request - Action Required",
       text: `Dear User,
@@ -510,7 +510,7 @@ Step 4: Click on the "Change Email" button to complete the process.
 
 Please note that this link is valid for a limited time and can only be used once. If you are unable to change your email address within that timeframe, you may need to request another email change link.
 
-If you did not initiate this email change request or suspect any unauthorized activity, please contact our support team immediately at Your email address through which you created account on nodemailer. We will investigate the matter promptly and assist you accordingly.
+If you did not initiate this email change request or suspect any unauthorized activity, please contact our support team immediately at beatsbreakers@gmail.com. We will investigate the matter promptly and assist you accordingly.
 
 Ensuring the security and privacy of our users' data is our top priority, and we appreciate your cooperation during this process. We apologize for any inconvenience caused.
 
