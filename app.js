@@ -9,6 +9,14 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 require('dotenv').config();
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Replace with the origin you want to allow
+  res.setHeader('Access-Control-Allow-Origin', 'https://text-up.netlify.app/');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 const uri = process.env.MONGODB_URI;
 
 const jwt = require("jsonwebtoken");
