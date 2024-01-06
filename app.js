@@ -43,6 +43,19 @@ const Images = mongoose.model("ImageDetails");
 const Feedback = mongoose.model("FeedbackDetails")
 const verification = mongoose.model("VerifyDetails")
 
+const port = process.env.PORT || 3000;
+
+// Listen on `port` and 0.0.0.0
+app.listen(port, "0.0.0.0", function () {
+  console.log("Server Started");
+});
+
+// const port = process.env.PORT || 5000;
+// app.listen(port, () => {
+//   console.log("Server Started");
+//   console.log(`App is running on port ${port}`);
+// });
+
 //Random OTP
 function generateOTP() {
   const otpLength = 6;
@@ -242,12 +255,6 @@ app.post("/userNotesData", async (req, res) => {
         res.send({ status: "error", data: error });
       });
   } catch (error) { }
-});
-
-const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log("Server Started");
-  console.log(`App is running on port ${port}`);
 });
 
 // Get All User Notes Data
