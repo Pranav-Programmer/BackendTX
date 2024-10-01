@@ -96,11 +96,11 @@ app.post("/storeOTP", async (req, res) => {
   const { email } = req.body;
 
   try {
-    const oldUser = await User.findOne({ email });
+   // const oldUser = await User.findOne({ email });
 
-    if (oldUser) {
-      return res.json({ error: "User Exists" });
-    }
+   // if (oldUser) {
+    //  return res.json({ error: "User Exists" });
+   // }
     await verification.create({
       email,
       otp: Rotp,
