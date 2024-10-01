@@ -121,29 +121,18 @@ app.post("/storeOTP", async (req, res) => {
       subject: "TextUp Email OTP Verification - Action Required",
       text: `Dear User,
     
-Thank you for choosing TextUp service.To ensure the security of your account, we require you to verify your email address through OTP verification. Please follow the instructions below to complete the verification process:
-  
-Step 1: Open your email client and locate the email from TextUp.
-
-Step 2: Open the email and find the OTP code provided.
-
-Step 3: Return to the TextUp website and enter the OTP code in the designated verification field.
+Thank you for choosing our service. To ensure the security, we require you to verify your email address through OTP verification. Please use the following OTP to complete the verification process:
      
 OTP Code: ${VerificationOTP}
   
-Step 4: Click on the Verify button to complete the process.
-  
 Note: The OTP code is valid for a limited time and can only be used once. If you do not complete the verification process within the specified time, you may need to request a new OTP code.
   
-Ensuring the security and privacy of our users' data is our top priority, and this additional layer of verification helps us maintain a safe environment for all TextUp users. If you have not initiated this verification process or suspect any unauthorized activity, please contact our support team immediately at beatsbreakers@gmail.com. We will assist you in securing your account.
+Ensuring the security and privacy of our users' data is our top priority, and this additional layer of verification helps us maintain a safe environment for all users.
   
-Thank you for your cooperation in this matter. We apologize for any inconvenience caused during the verification process, but we believe these measures are essential to protect your account.
-  
-If you have any further questions or require assistance, please do not hesitate to reach out to our support team.
+Thank you for your cooperation in this matter. We apologize for any inconvenience caused during the verification process, but we believe these measures are essential.
   
 Best regards,
-Pranav
-TextUp Support Team`,
+Pranav`,
 };
     
 
