@@ -118,7 +118,7 @@ app.post("/storeOTP", async (req, res) => {
     var mailOptions = {
       from: "beatsbreakers@gmail.com",
       to: email,
-      subject: "TextUp Email OTP Verification - Action Required",
+      subject: "Email OTP Verification - Action Required",
       text: `Dear User,
     
 Thank you for choosing our service. To ensure the security, we require you to verify your email address through OTP verification. Please use the following OTP to complete the verification process:
